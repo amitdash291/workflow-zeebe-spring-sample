@@ -28,7 +28,7 @@ services:
     container_name: operate
     image: camunda/operate
     ports:
-      - "8080:8080"
+      - "8090:8080"
     volumes:
       - ./operate-application.yaml:/usr/local/operate/config/application.yml
     networks:
