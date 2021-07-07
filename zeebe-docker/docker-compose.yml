@@ -11,7 +11,7 @@ networks:
 services:
   zeebe:
     container_name: zeebe
-    image: camunda/zeebe
+    image: camunda/zeebe:1.0.1
     environment:
       - ZEEBE_LOG_LEVEL=debug
     ports:
@@ -26,7 +26,7 @@ services:
       - zeebe_network
   operate:
     container_name: operate
-    image: camunda/operate
+    image: camunda/operate:1.0.1
     ports:
       - "8090:8080"
     volumes:
